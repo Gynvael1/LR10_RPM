@@ -1,0 +1,146 @@
+﻿<Window x:Class="LR10_RPM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LR10_RPM"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1000">
+    <Canvas>
+        <!--1 знак-->
+        <!--Фигура-->
+        <Viewbox Width="150" Height="150" Canvas.Left="50" Stretch="Uniform" 
+                 x:Name="Nerovno_xaml" 
+                 MouseLeftButtonDown="Znak_Click" 
+                 MouseEnter="Znak_MouseEnter" MouseLeave="Znak_MouseLeave">
+            <Canvas UseLayoutRounding="False" Width="834.116" Height="734.423">
+                <Canvas.Clip>
+                    <RectangleGeometry Rect="0,0,834.116,734.423"/>
+                </Canvas.Clip>
+                <Path Fill="#ffffffff">
+                    <Path.Data>
+                        <PathGeometry Figures="m 0 689.423 c 0 24.853 20.147 45 45 45 l 744.116 0 c 24.853 0 45 -20.147 45 -45 c 0 -7.899 -2.079 -15.659 -6.029 -22.5 l -372.058 -644.423 c -8.038 -13.923 -22.894 -22.5 -38.971 -22.5 c -16.077 0 -30.933 8.577 -38.971 22.5 l -372.058 644.423 c -3.95 6.841 -6.029 14.601 -6.029 22.5 z" FillRule="Nonzero"/>
+                    </Path.Data>
+                </Path>
+                <Path Stroke="#ff000000" StrokeThickness="2.0" StrokeDashCap="Flat">
+                    <Path.Data>
+                        <PathGeometry Figures="m 1 689.423 c 0 24.301 19.699 44 44 44 l 744.116 0 c 24.301 0 44 -19.699 44 -44 c 0 -7.724 -2.033 -15.311 -5.895 -22 l -372.058 -644.423 c -7.86 -13.614 -22.385 -22 -38.105 -22 c -15.72 0 -30.245 8.386 -38.105 22 l -372.058 644.423 c -3.862 6.689 -5.895 14.276 -5.895 22 z" FillRule="Nonzero"/>
+                    </Path.Data>
+                </Path>
+                <Path Fill="#ffff0000" x:Name="RedPart1">
+                    <Path.Data>
+                        <PathGeometry Figures="m 10 689.423 c 0 19.33 15.67 35 35 35 h 744.116 c 19.33 0 35 -15.67 35 -35 c 0 -6.144 -1.617 -12.179 -4.689 -17.5 L 447.369 27.5 C 441.117 16.671 429.562 10 417.058 10 C 404.554 10 392.999 16.671 386.747 27.5 L 14.689 671.923 C 11.617 677.244 10 683.28 10 689.423 Z m 83.634 -33.852 c 0 -1.755 0.462 -3.48 1.34 -5 L 408.398 107.705 c 1.786 -3.094 5.087 -5 8.66 -5 c 3.573 0 6.873 1.906 8.66 5 l 313.424 542.866 c 0.878 1.52 1.34 3.245 1.34 5 c 0 5.523 -4.477 10 -10 10 H 103.634 c -5.523 0 -10 -4.477 -10 -10 z" FillRule="Nonzero"/>
+                    </Path.Data>
+                </Path>
+                <Path Fill="#ff000000">
+                    <Path.Data>
+                        <PathGeometry Figures="m 112.153 650.653 l 58.769 -101.792 c 5.128 1.272 10.663 1.956 16.629 1.956 c 27.541 0 45.901 -14.55 57.377 -34.426 c 11.475 -19.876 29.836 -34.426 57.376 -34.426 c 27.541 0 45.902 14.55 57.377 34.426 c 11.476 19.876 29.836 34.426 57.377 34.426 c 27.541 0 45.901 -14.55 57.377 -34.426 c 11.475 -19.876 29.836 -34.426 57.377 -34.426 c 27.54 0 45.901 14.55 57.376 34.426 c 11.476 19.876 29.836 34.426 57.377 34.426 c 5.966 0 11.501 -0.684 16.629 -1.956 l 58.769 101.792 z" FillRule="Nonzero"/>
+                    </Path.Data>
+                </Path>
+            </Canvas>
+        </Viewbox>
+        <!--Изображение-->
+        <Viewbox x:Name="NerovnoPNG" Width="150" Height="150" Canvas.Left="250" MouseLeftButtonDown="Znak_Click">
+            <Image  Source="/Image/NerovnoPNG.png"/>
+        </Viewbox>
+
+        <!-- 2 знак-->
+        <!--Фигура-->
+        <Viewbox Width="150" Height="150" Canvas.Left="50" Stretch="Uniform" 
+         x:Name="Fire" Canvas.Top="175" 
+         MouseLeftButtonDown="Znak_Click"
+         MouseEnter="Znak_MouseEnter" MouseLeave="Znak_MouseLeave">
+            <Canvas UseLayoutRounding="False" Width="600.0" Height="600.0">
+                <Canvas.Clip>
+                    <RectangleGeometry Rect="0,0,600.0,600.0"/>
+                </Canvas.Clip>
+                <Canvas UseLayoutRounding="False" RenderTransform="1.0,0.0,0.0,1.0,0.0,-452.36218">
+                    <Path RenderTransform="2.449473,0.0,0.0,3.2141217,1087.7205,-1829.9414" Fill="#ffffffff">
+                        <Path.Data>
+                            <PathGeometry Figures="m -199.112 803.424 a 122.475 93.3381 0 1 1 -244.951 0 a 122.475 93.3381 0 1 1 244.951 0 z" FillRule="Nonzero"/>
+                        </Path.Data>
+                    </Path>
+                    <Path Fill="#ff000000">
+                        <Path.Data>
+                            <PathGeometry Figures="m 241.663 703.975 c -6.41052 0 -12.1584 3.96494 -14.4557 9.94965 l -25.9174 67.4697 c -9.65033 0 -17.4194 7.76904 -17.4194 17.4194 l 0 42.5806 c 0 9.65032 7.76903 17.4194 17.4194 17.4194 l 197.419 0 c 9.6503 0 17.4193 -7.76904 17.4193 -17.4194 l 0 -42.5806 c 0 -9.65032 -7.769 -17.4194 -17.4193 -17.4194 l -25.9173 -67.4697 c -2.2973 -5.98471 -8.0452 -9.94965 -14.4557 -9.94965 l -116.673 0 z m 3.08468 19.3548 l 110.504 0 c 4.0065 0 7.6064 2.45922 9.0422 6.19964 l 19.8992 51.8649 l -168.387 0 l 19.8992 -51.8649 c 1.43584 -3.74042 5.03574 -6.19964 9.04239 -6.19964 z M 221.613 792.04 c 11.2239 0 20.3226 9.09871 20.3226 20.3226 c 0 11.2239 -9.09871 20.3226 -20.3226 20.3226 c -11.2239 0 -20.3226 -9.09871 -20.3226 -20.3226 c 0 -11.2239 9.09871 -20.3226 20.3226 -20.3226 z m 156.774 0 c 11.2239 0 20.3226 9.09871 20.3226 20.3226 c 0 11.2239 -9.0987 20.3226 -20.3226 20.3226 c -11.2239 0 -20.3226 -9.09871 -20.3226 -20.3226 c 0 -11.2239 9.0987 -20.3226 20.3226 -20.3226 z" FillRule="Nonzero"/>
+                        </Path.Data>
+                    </Path>
+                    <Path Fill="#ff000000">
+                        <Path.Data>
+                            <PathGeometry Figures="m 203.226 872.362 l 0 25.1613 c 0 10.6894 8.66545 19.3548 19.3548 19.3548 c 10.6894 0 19.3548 -8.66545 19.3548 -19.3548 l 0 -25.1613 l -38.7097 0 z" FillRule="Nonzero"/>
+                        </Path.Data>
+                    </Path>
+                    <Path Fill="#ffff8000">
+                        <Path.Data>
+                            <PathGeometry Figures="m 203.226 568.491 l 38.7097 80.2736 l -67.7419 -17.3704 l 67.457 72.5807 l 116.414 0 l 77.4194 -96.7742 l -77.4194 38.7097 l 38.7097 -106.452 l -64.8387 48.3871 l -51.2903 -58.0645 l -19.6822 60.9346 z" FillRule="Nonzero"/>
+                        </Path.Data>
+                    </Path>
+                    <Path Fill="#ffff0000">
+                        <Path.Data>
+                            <PathGeometry Figures="m 280.645 601.394 l 0 34.8387 l -19.3549 -7.74197 l 19.3549 56.1291 l 11.6129 -9.67742 l 7.7419 9.67742 l 7.7419 -9.67742 l 11.6129 9.67742 l 19.3549 -62.9032 l -19.3549 17.4194 l 1.9355 -39.6775 l -25.1613 30 z" FillRule="Nonzero"/>
+                        </Path.Data>
+                    </Path>
+                    <Path Fill="#ff000000">
+                        <Path.Data>
+                            <PathGeometry Figures="m 358.065 872.362 l 0 25.1613 c 0 10.6894 8.6655 19.3548 19.3548 19.3548 c 10.6894 0 19.3549 -8.66545 19.3549 -19.3548 l 0 -25.1613 l -38.7097 0 z" FillRule="Nonzero"/>
+                        </Path.Data>
+                    </Path>
+                    <Path RenderTransform="13.525102,0.0,0.0,10.147504999999999,1486.4308,-3633.998" Stroke="#ff000000" StrokeThickness="0.17071831" StrokeDashCap="Flat">
+                        <Path.Data>
+                            <PathGeometry Figures="m -65.6136 432.26 c 0 16.2733 -9.89766 29.4654 -22.107 29.4654 c -12.2094 0 -22.107 -13.1921 -22.107 -29.4654 c 0 -16.2733 9.89766 -29.4654 22.107 -29.4654 c 12.2094 0 22.107 13.1921 22.107 29.4654 z" FillRule="Nonzero"/>
+                        </Path.Data>
+                    </Path>
+                    <Path RenderTransform="1.0,0.0,0.0,1.0,0.0,452.36218" Fill="#ffff0000" x:Name="RedPart2">
+                        <Path.Data>
+                            <PathGeometry Figures="M 300 10 C 139.837 10 10 139.837 10 300 C 10 460.163 139.837 590 300 590 C 460.163 590 590 460.163 590 300 C 590 139.837 460.163 10 300 10 z M 300 59.0312 C 433.083 59.0312 540.969 166.917 540.969 300 C 540.969 433.083 433.083 540.969 300 540.969 C 166.917 540.969 59.0312 433.083 59.0312 300 C 59.0312 166.917 166.917 59.0312 300 59.0312 z" FillRule="Nonzero"/>
+                        </Path.Data>
+                    </Path>
+                </Canvas>
+            </Canvas>
+        </Viewbox>
+        <!--Изображение-->
+        <Viewbox x:Name="FirePNG" Width="150" Height="150" Canvas.Left="250" Canvas.Top="175" MouseLeftButtonDown="Znak_Click">
+            <Image Source="/Image/FirePNG.png"/>
+        </Viewbox>
+
+        <!-- 3 знак-->
+        <!--Фигура-->
+        <Viewbox Width="150" Height="150" Canvas.Left="50" Stretch="Uniform" 
+         x:Name="Layer_1" Canvas.Top="350" 
+         MouseLeftButtonDown="Znak_Click"
+         MouseEnter="Znak_MouseEnter" MouseLeave="Znak_MouseLeave">
+            <Canvas UseLayoutRounding="False" Width="634.14001" Height="561.22998">
+                <Canvas.Clip>
+                    <RectangleGeometry Rect="0,0,634.14001,561.22998"/>
+                </Canvas.Clip>
+                <Canvas UseLayoutRounding="False" RenderTransform="1.0,0.0,0.0,1.0,0.0,-491.13214">
+                    <Path Fill="#ffffffff">
+                        <Path.Data>
+                            <PathGeometry Figures="m 339.565 497.172 c -21.5231 -12.4263 -49.0448 -5.052 -61.4712 16.4713 L 6.03639 984.862 c -12.4264 21.5231 -5.05209 49.0447 16.4711 61.4711 c 6.84091 3.9496 14.6009 6.0289 22.5001 6.0289 l 544.116 -0.0001 c 7.89926 0 15.6593 -2.0793 22.5001 -6.0289 c 21.5232 -12.4264 28.8976 -39.948 16.4712 -61.4711 l -272.058 -471.218 c -3.94962 -6.84091 -9.63028 -12.5216 -16.4712 -16.4713 z" FillRule="Nonzero"/>
+                        </Path.Data>
+                    </Path>
+                    <Path Fill="#ff000000">
+                        <Path.Data>
+                            <PathGeometry Figures="m 371.006 897.136 c -2.23295 -1.36836 -4.96062 -1.66709 -7.4367 -0.8145 L 168.292 963.561 L 142.534 946.833 L 294.739 865.904 c 1.38205 -0.73486 2.54221 -1.82623 3.36006 -3.16084 c 2.5305 -4.1294 1.23434 -9.52831 -2.89495 -12.0587 l -49.8992 -30.5783 c -2.23296 -1.36836 -4.96064 -1.66709 -7.43667 -0.81452 l -39.3338 13.5437 l -21.0607 -10.272 l 51.2674 -29.5992 l 2.5822 -59.1421 l 18.8361 13.938 l 6.14891 41.1433 c 0.38707 2.58994 1.91154 4.87148 4.15636 6.2203 l 50.1641 30.1417 c 4.15124 2.49431 9.53861 1.15107 12.033 -3.00024 c 0.80617 -1.34171 1.23854 -2.87473 1.2522 -4.43994 l 1.50432 -172.377 l 26.7311 15.1237 l 30.527 204.261 c 0.38707 2.58998 1.91156 4.87153 4.15636 6.22035 l 104.1 62.5479 c 7.47194 4.49072 9.88976 14.188 5.3999 21.6604 c -4.48986 7.4724 -14.1872 9.8902 -21.6595 5.4003 c -0.0394 -0.024 -0.0787 -0.047 -0.11848 -0.07 z" FillRule="Nonzero"/>
+                        </Path.Data>
+                    </Path>
+                    <Path Stroke="#ff000000" StrokeThickness="2.0" StrokeDashCap="Flat">
+                        <Path.Data>
+                            <PathGeometry Figures="m 1.00741 1007.36 c 5.7e-05 -7.72358 2.03313 -15.3112 5.89496 -22 L 278.96 514.144 c 12.1503 -21.0448 39.0603 -28.2554 60.1051 -16.1052 c 6.68883 3.8618 12.2433 9.4163 16.1051 16.1052 l 272.058 471.218 c 3.86184 6.6888 5.89491 14.2764 5.89497 22 c -7e-05 24.3005 -19.6996 43.9999 -44.0001 44 l -544.116 0 c -24.3005 -0.0001 -44 -19.6995 -44.0001 -44 z" FillRule="Nonzero"/>
+                        </Path.Data>
+                    </Path>
+                 
+                    <Path RenderTransform="1.0,0.0,0.0,1.0,0.0,491.13214" Fill="#ffff0000" x:Name="RedPart3">
+                        <Path.Data>
+                            <PathGeometry Figures="M 316.312 10 C 304.494 10.2648 293.093 16.5142 286.75 27.5 L 14.6875 498.719 C 5.02252 515.459 10.7598 536.866 27.5 546.531 C 32.8207 549.603 38.8562 551.219 45 551.219 L 589.125 551.219 C 595.269 551.219 601.304 549.603 606.625 546.531 C 623.365 536.866 629.102 515.459 619.438 498.719 L 347.375 27.5 C 344.303 22.1793 339.883 17.7594 334.562 14.6875 C 328.808 11.3652 322.503 9.86131 316.312 10 z M 316.375 70.25 C 318.296 70.1143 320.269 70.5582 322.062 71.5938 C 323.583 72.4714 324.841 73.7283 325.719 75.25 L 567.281 493.625 C 570.042 498.406 568.408 504.52 563.625 507.281 C 562.105 508.159 560.38 508.625 558.625 508.625 L 75.5312 508.625 C 70.0084 508.625 65.5312 504.148 65.5312 498.625 C 65.5312 496.87 65.9674 495.143 66.8438 493.625 L 308.406 75.25 C 310.132 72.2612 313.173 70.4762 316.375 70.25 z" FillRule="Nonzero"/>
+                        </Path.Data>
+                    </Path>
+                </Canvas>
+            </Canvas>
+        </Viewbox>
+        <!--Изображение-->
+        <Viewbox x:Name="SamoletPNG" Width="150" Height="150" Canvas.Left="250" Canvas.Top="350" MouseLeftButtonDown="Znak_Click">
+            <Image Source="/Image/SamoletPNG.png"/>
+        </Viewbox>
+    </Canvas>
+</Window>
